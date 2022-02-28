@@ -1,0 +1,128 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Examen1.Schedule">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="White">
+
+            <!-- Botones y Titulo -->
+            <StackLayout Padding="20,10,20,0">
+                    <StackLayout Orientation="Horizontal">
+                        <Button Text="←" TextColor="Black" FontSize="Title" FontAttributes="Bold" BackgroundColor="White" HorizontalOptions="Start" VerticalOptions="Start" WidthRequest="50" HeightRequest="50"></Button>
+                        <Button Text=".." TextColor="Black" FontSize="Title" FontAttributes="Bold" BackgroundColor="White" VerticalOptions="Start" HorizontalOptions="EndAndExpand" WidthRequest="50" HeightRequest="50"></Button>
+                    </StackLayout>
+                    <StackLayout Orientation="Vertical" Padding="0,10" Spacing="2">
+                        <Label Text="Today's" TextColor="Black" FontSize="Title"></Label>
+                        <Label Text="Schedule" TextColor="Black" FontSize="Title" FontAttributes="Bold"></Label>
+                    </StackLayout>
+                </StackLayout>
+            <StackLayout Orientation="Horizontal" Padding="20">
+                <Label Text="27 september" FontSize="Subtitle"></Label>
+                <Label Text="🗓️" FontSize="Subtitle" HorizontalOptions="EndAndExpand"></Label>
+            </StackLayout>
+            <StackLayout HeightRequest="1" Padding="20,0,20,0">
+                <Frame BackgroundColor="WhiteSmoke" HeightRequest="-39"></Frame>
+            </StackLayout>
+
+            <!-- Calendario semanal -->
+            <Grid Margin="20,15,20,0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="0.5*" />
+                    <ColumnDefinition Width="0.5*" />
+                    <ColumnDefinition Width="0.5*" />
+                    <ColumnDefinition Width="0.5*" />
+                    <ColumnDefinition Width="0.5*" />
+                    <ColumnDefinition Width="0.5*" />
+                    <ColumnDefinition Width="0.5*" />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="20" />
+                    <RowDefinition Height="20" />
+                </Grid.RowDefinitions>
+                <Label Grid.Row="0" Text="S" FontSize="Subtitle" HorizontalTextAlignment="Center"/>
+                <Label Grid.Column="1" Text="M" FontSize="Subtitle" HorizontalTextAlignment="Center"/>
+                <Label Grid.Row="1" Text="23" FontAttributes="Bold" FontSize="Subtitle" TextColor="Black" HorizontalTextAlignment="Center"/>
+                <Label Grid.Column="1" Grid.Row="1" Text="24" FontAttributes="Bold" FontSize="Subtitle" TextColor="Black" HorizontalTextAlignment="Center"/>
+                <Label Grid.Column="2" Grid.Row="0" Text="T" FontSize="Subtitle" HorizontalTextAlignment="Center"></Label>
+                <Label Grid.Column="2" Grid.Row="1" Text="25" FontAttributes="Bold" FontSize="Subtitle" TextColor="Black" HorizontalTextAlignment="Center"></Label>
+                <Label Grid.Column="3" Grid.Row="0" Text="W" FontSize="Subtitle" HorizontalTextAlignment="Center"></Label>
+                <Label Grid.Column="3" Grid.Row="1" Text="26" FontAttributes="Bold" FontSize="Subtitle" TextColor="Black" HorizontalTextAlignment="Center"></Label>
+                <Label Grid.Column="4" Grid.Row="0" Text="T" FontSize="Subtitle" HorizontalTextAlignment="Center"></Label>
+                <Label Grid.Column="4" Grid.Row="1" Text="27" FontAttributes="Bold" FontSize="Subtitle" TextColor="Black" HorizontalTextAlignment="Center" BackgroundColor="LightGray"></Label>
+                <Label Grid.Column="5" Grid.Row="0" Text="F" FontSize="Subtitle" HorizontalTextAlignment="Center"></Label>
+                <Label Grid.Column="5" Grid.Row="1" Text="28" FontAttributes="Bold" FontSize="Subtitle" TextColor="Black" HorizontalTextAlignment="Center"></Label>
+                <Label Grid.Column="6" Grid.Row="0" Text="S" FontSize="Subtitle" HorizontalTextAlignment="Center"></Label>
+                <Label Grid.Column="6" Grid.Row="1" Text="29" FontAttributes="Bold" FontSize="Subtitle" TextColor="Black" HorizontalTextAlignment="Center"></Label>
+            </Grid>
+
+            <!-- Primer frame -->
+            <StackLayout Padding="20,20,20,1">
+                <Frame CornerRadius="20" BackgroundColor="WhiteSmoke">
+                    <StackLayout Orientation="Horizontal">
+                        <Label VerticalOptions="Start" HorizontalOptions="Start">
+                            <Label.FormattedText>
+                                <FormattedString>
+                                    <Span Text="Patient consultation &#10;" TextColor="Black" FontSize="Subtitle" FontAttributes="Bold"/>
+                                    <Span Text="🕐 10 AM - 12 PM" FontSize="Subtitle" LineHeight="1.9"/>
+                                </FormattedString>
+                            </Label.FormattedText>
+                        </Label>
+                        <Button BackgroundColor="CornflowerBlue" Text="✔️ Active" VerticalOptions="Start" HorizontalOptions="EndAndExpand" HeightRequest="38" WidthRequest="100"></Button>
+                    </StackLayout>
+                </Frame>
+            </StackLayout>
+
+            <!-- Segundo frame -->
+            <StackLayout Padding="20,5">
+                <Frame CornerRadius="20" BackgroundColor="WhiteSmoke">
+                    <StackLayout Orientation="Horizontal">
+                        <Label VerticalOptions="Start" HorizontalOptions="Start">
+                            <Label.FormattedText>
+                                <FormattedString>
+                                    <Span Text="Lunch break &#10;" TextColor="Black" FontSize="Subtitle" FontAttributes="Bold"/>
+                                    <Span Text="🕐 01 AM - 02 PM" FontSize="Subtitle" LineHeight="1.9"/>
+                                </FormattedString>
+                            </Label.FormattedText>
+                        </Label>
+                        <Button BackgroundColor="DarkSeaGreen" Text="🏛️ Other" VerticalOptions="Start" HorizontalOptions="EndAndExpand" HeightRequest="38" WidthRequest="100"></Button>
+                    </StackLayout>
+                </Frame>
+            </StackLayout>
+
+            <!-- Tecer frame -->
+            <StackLayout Padding="20,5">
+                <Frame CornerRadius="20" BackgroundColor="WhiteSmoke">
+                    <StackLayout Orientation="Horizontal">
+                        <Label VerticalOptions="Start" HorizontalOptions="Start">
+                            <Label.FormattedText>
+                                <FormattedString>
+                                    <Span Text="Patient consultation &#10;" TextColor="Black" FontSize="Subtitle" FontAttributes="Bold"/>
+                                    <Span Text="🕐 02 AM - 04 PM" FontSize="Subtitle" LineHeight="1.9"/>
+                                </FormattedString>
+                            </Label.FormattedText>
+                        </Label>
+                        <Button BackgroundColor="Gold" Text="🌠 Important" HorizontalOptions="EndAndExpand" VerticalOptions="Start" WidthRequest="110" HeightRequest="38"></Button>
+                    </StackLayout>
+                </Frame>
+            </StackLayout>
+
+            <!-- Cuarto frame -->
+            <StackLayout Padding="20,5">
+                <Frame CornerRadius="20" BackgroundColor="WhiteSmoke">
+                    <StackLayout Orientation="Horizontal">
+                        <Label VerticalOptions="Start" HorizontalOptions="Start">
+                            <Label.FormattedText>
+                                <FormattedString>
+                                    <Span Text="Consultation Analysis &#10;" TextColor="Black" FontSize="Subtitle" FontAttributes="Bold"/>
+                                    <Span Text="🕐 04 am - 06 pm" FontSize="Subtitle" LineHeight="1.9"/>
+                                </FormattedString>
+                            </Label.FormattedText>
+                        </Label>
+                        <Button BackgroundColor="teal" Text="〽️ Optional" HorizontalOptions="EndAndExpand" VerticalOptions="Start" HeightRequest="38" WidthRequest="100"></Button>
+                    </StackLayout>
+                </Frame>
+            </StackLayout>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

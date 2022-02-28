@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Examen1.MainPage">
+
+    <StackLayout BackgroundColor="WhiteSmoke">
+        <!--Primer Frame -->
+        <Frame BackgroundColor="White" CornerRadius="20">
+            <StackLayout>
+                <StackLayout Orientation="Horizontal">
+                    <Button Text="-_" TextColor="Black" FontSize="Title" FontAttributes="Bold" BackgroundColor="White" HorizontalOptions="Start" VerticalOptions="Start" WidthRequest="50" HeightRequest="50"></Button>
+                    <Button Text=".." TextColor="Black" FontSize="Title" FontAttributes="Bold" BackgroundColor="White" VerticalOptions="Start" HorizontalOptions="EndAndExpand" WidthRequest="50" HeightRequest="50"></Button>
+                </StackLayout>
+                <StackLayout Orientation="Vertical" Padding="0,10">
+                    <Label Text="Find your" TextColor="Black" FontSize="Title"></Label>
+                    <Label Text="Consultant" TextColor="Black" FontSize="Title" FontAttributes="Bold"></Label>
+                </StackLayout>
+
+                <!-- Buscador -->
+                <StackLayout>
+                    <Frame CornerRadius="50" HeightRequest="20" BackgroundColor="WhiteSmoke">
+                        <StackLayout Orientation="Horizontal">
+                            <Image Source="https://cdn-icons-png.flaticon.com/512/622/622669.png" HorizontalOptions="Start" VerticalOptions="Start" HeightRequest="50"></Image>
+                            <Label Text="Search by name" FontAttributes="Bold" FontSize="Subtitle" VerticalOptions="Center" HorizontalOptions="Start" Padding="5,0"></Label>
+                        </StackLayout>
+                    </Frame>
+                </StackLayout>
+            </StackLayout>
+        </Frame>
+
+        <!-- Titulos de categorias -->
+        <StackLayout Orientation="Horizontal" Padding="20,10">
+            <Label Text="Categories" TextColor="Black" FontSize="Title" FontAttributes="Bold"></Label>
+            <Label Text="View all" FontSize="Body" HorizontalOptions="EndAndExpand" VerticalOptions="Center"></Label>
+        </StackLayout>
+
+        <!-- Frames de categorias -->
+        <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Padding="20,0" Spacing="10">
+            <Frame BackgroundColor="MediumPurple" HeightRequest="50" WidthRequest="55" CornerRadius="20">
+                <StackLayout Orientation="Vertical">
+                    <Image Source="https://pic.onlinewebfonts.com/svg/img_295443.png" HeightRequest="50" Margin="-10"></Image>
+                    <Label Text="Cardiac" Margin="-5" Padding="0,10" FontAttributes="Bold" TextColor="Black" HorizontalOptions="Center"></Label>
+                </StackLayout>
+            </Frame>
+            <Frame BackgroundColor="CornflowerBlue" HeightRequest="50" WidthRequest="55" CornerRadius="20">
+                <StackLayout Orientation="Vertical">
+                    <Image Source="https://cdn-icons-png.flaticon.com/512/3699/3699480.png" HeightRequest="50" Margin="-10"></Image>
+                    <Label Text="Lungs" Margin="-5" Padding="0,10" FontAttributes="Bold" TextColor="Black" HorizontalOptions="Center"></Label>
+                </StackLayout>
+            </Frame>
+            <Frame BackgroundColor="Teal" HeightRequest="50" WidthRequest="55" CornerRadius="20">
+                <StackLayout Orientation="Vertical">
+                    <Image Source="https://cdn-icons-png.flaticon.com/512/4206/4206131.png" HeightRequest="50" Margin="-10"></Image>
+                    <Label Text="Brain" Margin="-5" Padding="0,10" FontAttributes="Bold" TextColor="Black" HorizontalOptions="Center"></Label>
+                </StackLayout>
+            </Frame>
+            <Frame BackgroundColor="Gold" HeightRequest="50" WidthRequest="55" CornerRadius="20">
+                <StackLayout Orientation="Vertical">
+                    <Image Source="https://cdn-icons-png.flaticon.com/512/655/655337.png" HeightRequest="50" Margin="-10"></Image>
+                    <Label Text="Pelvis" Margin="-5" Padding="0,10" FontAttributes="Bold" TextColor="Black" HorizontalOptions="Center"></Label>
+                </StackLayout>
+            </Frame>
+        </StackLayout>
+
+        <!-- Tutulos de blogs -->
+        <StackLayout Orientation="Horizontal" Padding="20,10">
+            <Label Text="Latest Blog" TextColor="Black" FontSize="Title" FontAttributes="Bold"></Label>
+            <Label Text="View all" FontSize="Body" HorizontalOptions="EndAndExpand" VerticalOptions="Center"></Label>
+        </StackLayout>
+
+        <!-- Primer frame con titulos -->
+        <StackLayout Padding="20,5">
+            <Frame CornerRadius="20" BackgroundColor="White">
+                <StackLayout Orientation="Horizontal" Spacing="2">
+                    <Image Source="https://hospitalgalenia.com/wp-content/uploads/2018/08/Que-es-un-check-up-medico-1.jpg" HorizontalOptions="Start" HeightRequest="100" WidthRequest="100" Margin="-20"></Image>
+                    <Label VerticalOptions="Start" HorizontalOptions="CenterAndExpand" Margin="9">
+                        <Label.FormattedText>
+                            <FormattedString>
+                                <Span Text="Why need to check up? &#10;" TextColor="Black" FontSize="Subtitle" FontAttributes="Bold"/>
+                                <Span Text="🕐 2 hours ago | ⭐ 4.5" FontSize="Subtitle"/>
+                            </FormattedString>
+                        </Label.FormattedText>
+                    </Label>
+                </StackLayout>
+            </Frame>
+        </StackLayout>
+
+        <!-- Segundo frame con titulos -->
+        <StackLayout Padding="20,20">
+            <Frame CornerRadius="20" BackgroundColor="White">
+                <StackLayout Orientation="Horizontal" Spacing="2">
+                    <Image Source="https://www.hola.com/imagenes//belleza/caraycuerpo/2011110755394/inyecciones-medicina-estetica/0-188-624/inyecciones--z.jpg" HorizontalOptions="Start" HeightRequest="100" WidthRequest="100" Margin="-20"></Image>
+                    <Label VerticalOptions="Start" HorizontalOptions="CenterAndExpand" Margin="9">
+                        <Label.FormattedText>
+                            <FormattedString>
+                                <Span Text="Overcoming your fears &#10;" TextColor="Black" FontSize="Subtitle" FontAttributes="Bold"/>
+                                <Span Text="🕐 3 days ago | ⭐ 5.0" FontSize="Subtitle"/>
+                            </FormattedString>
+                        </Label.FormattedText>
+                    </Label>
+                </StackLayout>
+            </Frame>
+        </StackLayout>
+
+    </StackLayout>
+
+</ContentPage>
